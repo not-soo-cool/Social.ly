@@ -21,4 +21,8 @@ export const message = {
     userProfileFoundMessage: "User profile found",
     userProfileUpdatedMessage: "User profile updated successfully",
     userNotVerifiedMessage: "User not verified. Please verify your email",
+    imageMissingMessage: "Please provide image",
+    postCreatedMessage: "Post created successfully",
+    postNotFoundMessage: "No Post found",
+    postsFoundMessage: "Posts found",
 }
