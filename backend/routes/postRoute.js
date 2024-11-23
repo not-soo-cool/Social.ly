@@ -10,6 +10,4 @@ postRouter.get("/all", isAuthenticated, getAllPosts);
 
 postRouter.get("/:id", isAuthenticated, getPostById);
 
-postRouter.get("/my", isAuthenticated, getMyPosts);
-
 export default postRouter; 

@@ -5,6 +5,7 @@ import path from "path"
 import userRouter from "./routes/userRoute.js";
 import postRouter from "./routes/postRoute.js";
 import cookieParser from "cookie-parser";
+import commentRouter from "./routes/commentRoute.js";
 
 
 dotenv.config({ path: "./config/config.env" });
@@ -24,6 +25,7 @@ app.use(cors({
 
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/post", postRouter);
+app.use("/api/v1/comment", commentRouter);
 
 app.get("/", (req, res) => {
     res.send("Hello from the server!");
